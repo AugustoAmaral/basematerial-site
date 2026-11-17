@@ -4,43 +4,50 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Base Material — fatos checados, com fonte</title>
-<meta name="description" content="Notícia checada na fonte, explicada em um minuto. Lado declarado: o do trabalhador. Criado por Augusto Amaral.">
+<!-- POSITIONING STATEMENT: keep this one line in sync with .tag below and og:description. -->
+<meta name="description" content="Checagem de fatos independente, na fonte, em 1 minuto. Sem partido, sem patrocínio, sem dono. Criado por Augusto Amaral.">
 <meta property="og:title" content="Base Material">
-<meta property="og:description" content="Fatos checados, com fonte e lado declarado. Criado por Augusto Amaral.">
+<meta property="og:description" content="Checagem de fatos independente, na fonte, em 1 minuto. Sem partido, sem patrocínio, sem dono.">
 <meta property="og:image" content="avatar.png">
 <link rel="icon" href="avatar.png">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <main>
-  <header>
-    <img src="avatar.png" alt="Logo da Base Material: as letras BM sobre uma barra">
-    <h1>BASE MATERIAL</h1>
-    <p class="tag">Notícia checada na fonte, explicada em um minuto.<br>Lado declarado: o do trabalhador.</p>
+  <div class="chrome-bar">
+    <span class="chrome"><span class="mark"></span><span class="label">Base Material</span></span>
+  </div>
+  <div class="chrome-rule"></div>
+
+  <header class="hero">
+    <h1 class="display">Base<br>Material</h1>
+    <!-- POSITIONING STATEMENT: swap wording here + meta description + og:description together. -->
+    <p class="tag">Checagem de fatos independente, na fonte, em 1 minuto.</p>
+    <p class="sub">Sem partido, sem patrocínio, sem dono. Errou? Corrige a gente com a fonte.</p>
   </header>
 
-  <a class="card red" href="mailto:basematerialbr@augustoamaral.com?subject=Sugest%C3%A3o%20de%20checagem">
-    <p class="mono" style="margin:0 0 4px">contato</p>
-    <strong>Manda o que você quer que eu cheque</strong>
-    <span>basematerialbr@augustoamaral.com</span>
+  <a class="block red" href="mailto:basematerialbr@augustoamaral.com?subject=Sugest%C3%A3o%20de%20checagem">
+    <span class="kicker">contato</span>
+    <strong>Manda o que você quer que a gente cheque</strong>
+    <span class="sub2">basematerialbr@augustoamaral.com</span>
   </a>
 
-  <a class="card" href="https://www.instagram.com/basematerial.br/">
-    <p class="mono" style="margin:0 0 4px">instagram</p>
+  <a class="block green" href="https://www.instagram.com/basematerial.br/">
+    <span class="kicker">instagram</span>
     <strong>@basematerial.br</strong>
-    <span>os vídeos</span>
+    <span class="sub2">os vídeos</span>
   </a>
 
-  <h2>Checagens<small class="mono">cada vídeo, com as afirmações, os vereditos e as fontes</small></h2>
+  <h2>Checagens<small>cada vídeo, com as afirmações, os vereditos e as fontes</small></h2>
 
-  <a class="card" href="/fontes/plp-299/">
-    <p class="mono" style="margin:0 0 4px">17/11/2026</p>
+  <a class="block paper" href="/fontes/plp-299/">
+    <span class="kicker">17/11/2026</span>
     <strong>PLP 299/2026: o ajuste fiscal</strong>
-    <span>salário mínimo, piso do SUS, teto de gastos, isenções de empresas, supersalários</span>
+    <span class="sub2">salário mínimo, piso do SUS, teto de gastos, isenções de empresas, supersalários</span>
   </a>
 
   <footer>
-    <p>Criado por <a href="https://augustoamaral.com">Augusto Amaral</a>.<br>Errei? Manda a correção com a fonte que eu publico.</p>
+    <p>Criado por <a href="https://augustoamaral.com">Augusto Amaral</a>.</p>
   </footer>
 </main>
 </body>
