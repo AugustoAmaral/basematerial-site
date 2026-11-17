@@ -9,41 +9,7 @@
 <meta property="og:description" content="Fatos checados, com fonte e lado declarado. Criado por Augusto Amaral.">
 <meta property="og:image" content="avatar.png">
 <link rel="icon" href="avatar.png">
-<style>
-  @font-face { font-family: "Archivo Black"; src: url("fonts/ArchivoBlack-Regular.ttf"); font-display: swap; }
-  @font-face { font-family: "Inter"; src: url("fonts/Inter.ttf"); font-weight: 100 900; font-display: swap; }
-  @font-face { font-family: "JetBrains Mono"; src: url("fonts/JetBrainsMono.ttf"); font-weight: 100 900; font-display: swap; }
-  :root { --bg: #f2ede4; --ink: #151515; --red: #d62718; --muted: #7a7368; --line: #d6cfc3; }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink); font: 500 17px/1.5 Inter, system-ui, sans-serif;
-    background-image: radial-gradient(var(--line) 2px, transparent 2px); background-size: 24px 24px;
-  }
-  main { max-width: 560px; margin: 0 auto; padding: 40px 20px 56px; }
-  header { text-align: center; }
-  header img { width: 112px; height: 112px; border-radius: 50%; display: block; margin: 0 auto 16px; }
-  h1 { font: 400 40px/1.05 "Archivo Black", sans-serif; margin: 0; letter-spacing: .5px; }
-  .tag { color: var(--muted); margin: 8px 0 0; }
-  .mono { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; }
-  .card {
-    display: block; background: #fff; border: 4px solid var(--ink); box-shadow: 8px 8px 0 var(--ink);
-    padding: 16px 18px; margin: 22px 0 0; color: inherit; text-decoration: none;
-  }
-  a.card { transition: transform .08s, box-shadow .08s; }
-  a.card:hover, a.card:focus-visible { transform: translate(3px, 3px); box-shadow: 5px 5px 0 var(--ink); outline: none; }
-  .card strong { display: block; font: 400 22px/1.2 "Archivo Black", sans-serif; }
-  .card span { color: var(--muted); }
-  .red { background: var(--red); color: #fff; }
-  .red span { color: #ffe3df; }
-  h2 { font: 400 22px/1.2 "Archivo Black", sans-serif; margin: 44px 0 0; }
-  h2 small { display: block; margin-top: 4px; color: var(--muted); }
-  ul.sources { list-style: none; margin: 14px 0 0; padding: 0; }
-  ul.sources li { border-top: 2px solid var(--line); padding: 10px 0; }
-  ul.sources a { color: var(--ink); font-weight: 650; text-underline-offset: 3px; }
-  ul.sources span { display: block; color: var(--muted); font-size: 15px; }
-  footer { margin-top: 44px; text-align: center; color: var(--muted); }
-  footer a { color: var(--ink); }
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
 <main>
@@ -65,15 +31,13 @@
     <span>os vídeos</span>
   </a>
 
-  <h2 id="plp-299">Fontes · PLP 299/2026 (ajuste fiscal)<small class="mono">vídeo de 16/11/2026</small></h2>
-  <ul class="sources">
-    <li><a href="https://www12.senado.leg.br/orcamento/documentos/estudos/tipos-de-estudos/notas-tecnicas-e-informativos/nota_informativa_texto_aprovado_plp_299_2026.pdf">Nota informativa da Consultoria de Orçamentos do Senado</a><span>texto aprovado artigo por artigo, 13/11/2026 — fonte principal</span></li>
-    <li><a href="https://www25.senado.leg.br/web/atividade/materias/-/materia/176328">Tramitação do PLP 299/2026 no Senado</a><span>texto, emendas e votações</span></li>
-    <li><a href="https://gazetadoparana.com.br/publico/checagem-ajuste-fiscal-vai-cortar-salario-minimo-aposentadorias-e-recursos-da-saude">Checagem da Gazeta do Paraná</a><span>salário mínimo, aposentadoria, saúde, 16/11/2026</span></li>
-    <li><a href="https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/16/jones-manoel-nao-critiquei-janones-e-fui-colocado-em-disputa-que-recuso.ghtm">Críticas de Jones Manoel (UOL)</a><span>16/11/2026</span></li>
-    <li><a href="https://vermelho.org.br/2026/11/16/pcdob-plp-299-2026-reduz-o-investimento-e-compromete-o-desenvolvimento/">Nota do PCdoB (Vermelho)</a><span>16/11/2026</span></li>
-    <li><a href="https://www.correiobraziliense.com.br/economia/2026/11/7538810-moretti-defende-projeto-de-ajuste-fiscal-e-afirma-que-ha-fake-news-nas-redes.html">Defesa do ministro Bruno Moretti (Correio Braziliense)</a><span>14/11/2026</span></li>
-  </ul>
+  <h2>Checagens<small class="mono">cada vídeo, com as afirmações, os vereditos e as fontes</small></h2>
+
+  <a class="card" href="/fontes/plp-299/">
+    <p class="mono" style="margin:0 0 4px">17/11/2026</p>
+    <strong>PLP 299/2026: o ajuste fiscal</strong>
+    <span>salário mínimo, piso do SUS, teto de gastos, isenções de empresas, supersalários</span>
+  </a>
 
   <footer>
     <p>Criado por <a href="https://augustoamaral.com">Augusto Amaral</a>.<br>Errei? Manda a correção com a fonte que eu publico.</p>
